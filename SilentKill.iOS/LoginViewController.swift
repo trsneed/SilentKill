@@ -8,11 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        repository.login(parameters: ["email":"trsneed+silentkill@gmail.com", "password":"testfest"]) { [weak self] (success) in
+            if success {
+                self?.showMainViewController()
+            }
+        }
+    }
+
+    func showMainViewController(){
+        performSegue(withIdentifier: "loggedInSegue", sender: nil)
     }
 
     override func didReceiveMemoryWarning() {

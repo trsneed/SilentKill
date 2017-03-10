@@ -6,6 +6,7 @@ target 'SilentKill.iOS' do
   use_frameworks!
 
   pod 'IGListKit'
+  pod 'SwiftLint'
   pod 'SwiftyJSON'
 
 end

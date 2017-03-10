@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		062C6DBE0B924C4C4181784D /* Pods_SilentKill_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF036B3516F7ACEDBF4FB48 /* Pods_SilentKill_iOS.framework */; };
+		221D06081E730C3400A0A04B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D06071E730C3400A0A04B /* BaseViewController.swift */; };
+		221D060A1E7317E300A0A04B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D06091E7317E300A0A04B /* MainViewController.swift */; };
+		227BB0AF1E6CB1F600DA0224 /* SilentKillRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227BB0AE1E6CB1F600DA0224 /* SilentKillRepository.swift */; };
 		22AF0D721E6CAE4E008BB424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AF0D711E6CAE4E008BB424 /* AppDelegate.swift */; };
-		22AF0D741E6CAE4E008BB424 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AF0D731E6CAE4E008BB424 /* ViewController.swift */; };
+		22AF0D741E6CAE4E008BB424 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AF0D731E6CAE4E008BB424 /* LoginViewController.swift */; };
 		22AF0D771E6CAE4E008BB424 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22AF0D751E6CAE4E008BB424 /* Main.storyboard */; };
 		22AF0D791E6CAE4E008BB424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22AF0D781E6CAE4E008BB424 /* Assets.xcassets */; };
 		22AF0D7C1E6CAE4E008BB424 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22AF0D7A1E6CAE4E008BB424 /* LaunchScreen.storyboard */; };
@@ -17,9 +20,12 @@
 
 /* Begin PBXFileReference section */
 		0C8391656B3FD5C53DF5FA4C /* Pods-SilentKill.iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentKill.iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SilentKill.iOS/Pods-SilentKill.iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		221D06071E730C3400A0A04B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ../BaseViewController.swift; sourceTree = "<group>"; };
+		221D06091E7317E300A0A04B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
+		227BB0AE1E6CB1F600DA0224 /* SilentKillRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SilentKillRepository.swift; sourceTree = "<group>"; };
 		22AF0D6E1E6CAE4E008BB424 /* SilentKill.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilentKill.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22AF0D711E6CAE4E008BB424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22AF0D731E6CAE4E008BB424 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22AF0D731E6CAE4E008BB424 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 		22AF0D761E6CAE4E008BB424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22AF0D781E6CAE4E008BB424 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22AF0D7B1E6CAE4E008BB424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +54,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		221D060B1E732A6200A0A04B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		221D060C1E732A6200A0A04B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		221D060D1E732A6200A0A04B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				221D06071E730C3400A0A04B /* BaseViewController.swift */,
+				221D06091E7317E300A0A04B /* MainViewController.swift */,
+				22AF0D731E6CAE4E008BB424 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		22AF0D651E6CAE4E008BB424 = {
 			isa = PBXGroup;
 			children = (
@@ -69,12 +99,15 @@
 		22AF0D701E6CAE4E008BB424 /* SilentKill.iOS */ = {
 			isa = PBXGroup;
 			children = (
+				221D060D1E732A6200A0A04B /* Controllers */,
+				221D060C1E732A6200A0A04B /* Models */,
+				221D060B1E732A6200A0A04B /* Views */,
 				22AF0D711E6CAE4E008BB424 /* AppDelegate.swift */,
-				22AF0D731E6CAE4E008BB424 /* ViewController.swift */,
 				22AF0D751E6CAE4E008BB424 /* Main.storyboard */,
 				22AF0D781E6CAE4E008BB424 /* Assets.xcassets */,
 				22AF0D7A1E6CAE4E008BB424 /* LaunchScreen.storyboard */,
 				22AF0D7D1E6CAE4E008BB424 /* Info.plist */,
+				227BB0AE1E6CB1F600DA0224 /* SilentKillRepository.swift */,
 			);
 			path = SilentKill.iOS;
 			sourceTree = "<group>";
@@ -211,8 +244,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22AF0D741E6CAE4E008BB424 /* ViewController.swift in Sources */,
+				22AF0D741E6CAE4E008BB424 /* LoginViewController.swift in Sources */,
+				221D06081E730C3400A0A04B /* BaseViewController.swift in Sources */,
+				227BB0AF1E6CB1F600DA0224 /* SilentKillRepository.swift in Sources */,
 				22AF0D721E6CAE4E008BB424 /* AppDelegate.swift in Sources */,
+				221D060A1E7317E300A0A04B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +410,7 @@
 				22AF0D821E6CAE4E008BB424 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
