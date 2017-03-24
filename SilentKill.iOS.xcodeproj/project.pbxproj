@@ -10,6 +10,8 @@
 		062C6DBE0B924C4C4181784D /* Pods_SilentKill_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF036B3516F7ACEDBF4FB48 /* Pods_SilentKill_iOS.framework */; };
 		221D06081E730C3400A0A04B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D06071E730C3400A0A04B /* BaseViewController.swift */; };
 		221D060A1E7317E300A0A04B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D06091E7317E300A0A04B /* MainViewController.swift */; };
+		221D060F1E732B5C00A0A04B /* GameRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D060E1E732B5C00A0A04B /* GameRound.swift */; };
+		221D06111E732D0C00A0A04B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D06101E732D0C00A0A04B /* Player.swift */; };
 		227BB0AF1E6CB1F600DA0224 /* SilentKillRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227BB0AE1E6CB1F600DA0224 /* SilentKillRepository.swift */; };
 		22AF0D721E6CAE4E008BB424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AF0D711E6CAE4E008BB424 /* AppDelegate.swift */; };
 		22AF0D741E6CAE4E008BB424 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AF0D731E6CAE4E008BB424 /* LoginViewController.swift */; };
@@ -22,6 +24,8 @@
 		0C8391656B3FD5C53DF5FA4C /* Pods-SilentKill.iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentKill.iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SilentKill.iOS/Pods-SilentKill.iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		221D06071E730C3400A0A04B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ../BaseViewController.swift; sourceTree = "<group>"; };
 		221D06091E7317E300A0A04B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
+		221D060E1E732B5C00A0A04B /* GameRound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameRound.swift; sourceTree = "<group>"; };
+		221D06101E732D0C00A0A04B /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		227BB0AE1E6CB1F600DA0224 /* SilentKillRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SilentKillRepository.swift; sourceTree = "<group>"; };
 		22AF0D6E1E6CAE4E008BB424 /* SilentKill.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilentKill.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22AF0D711E6CAE4E008BB424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 		221D060C1E732A6200A0A04B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				221D060E1E732B5C00A0A04B /* GameRound.swift */,
+				221D06101E732D0C00A0A04B /* Player.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -248,6 +254,8 @@
 				221D06081E730C3400A0A04B /* BaseViewController.swift in Sources */,
 				227BB0AF1E6CB1F600DA0224 /* SilentKillRepository.swift in Sources */,
 				22AF0D721E6CAE4E008BB424 /* AppDelegate.swift in Sources */,
+				221D06111E732D0C00A0A04B /* Player.swift in Sources */,
+				221D060F1E732B5C00A0A04B /* GameRound.swift in Sources */,
 				221D060A1E7317E300A0A04B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
