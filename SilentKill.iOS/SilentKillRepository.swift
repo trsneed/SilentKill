@@ -61,10 +61,11 @@ class SilentKillRepository: NSObject {
         dataTask.resume()
     }
 
-    func getUserGames(){
+    func getUserGames(success: @escaping ([GameRound]) -> ()){
         let url = baseUrl?.appendingPathComponent(Endpoints.games.rawValue)
         self.perform(with: SilentKillRepository.getRequest(with: url!)) { (json) in
-            var a = ""
+            guard let rounds = GameRound.Create(json: json.arrayValue) else { return }
+            success(rounds)
         }
     }
 
